@@ -9,5 +9,9 @@ menu {
 menu li {
     display: inline-block;
     margin: 0 0;
-    margin: none;
+    margin: 0;
+}
+
+a {
+    padding: 8px 12px;
 }
