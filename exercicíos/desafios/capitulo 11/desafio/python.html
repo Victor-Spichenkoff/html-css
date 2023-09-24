@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 50px;
+        }
+
+        a{
+            color: white;
+        }
+
+        div{
+            text-align: left;
+            font-size: 17px;
+        }
+
+        h2{
+            color: rgb(194, 3, 3);
+            margin-top: 100px;
+        }
+        
+        p#pgAnagrmas{
+            color: rgb(194, 3, 3);
+        }
+
+        a#pa{
+            color: rgb(255, 0, 0);
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Curso</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br><br><br><b><br></b>
+
+
+    <a href="https://www.youtube.com/embed/S9uPNppGsGo" target="_blank">Veja o curso completo</a>
+
+    <p>Para voltar à página principal</p>
+    <a href="index.html"><img src="arquivos/voltar.png" alt=""></a>
+
+<div>
+    <pre>
+<h2>Ímpar ou Par</h2>
+<code>
+num = int(input('Qual número: '))
+if num % 2 == 0:
+    print(f'O número {num} é par')
+else if num % 2 == 1:
+    print('O número {} é ímpar'.format(num))
+else:
+    print('Não é um número')
+</code>
+<h2>anagramas</h2>
+<code>
+def fatorial(n):
+    f = 1
+    while n > 0:
+        f *= n
+        n -= 1
+    return f
+
+
+def anagramas(palavra):
+    #verifica se repete e conta os repetidos e nao repetidos
+    repete = []
+    nao_repete = []
+    for letra in palavra.strip():
+        if letra not in nao_repete:
+            nao_repete.append(letra)
+        elif letra in nao_repete:
+            repete.append(letra)
+    #calculos
+    #sem repetir
+    if not repete:
+        resultado = fatorial(len(nao_repete))
+
+        # repetindo
+    else:
+        fatorial_cima = fatorial(len(repete) + len(nao_repete))# vai modificar depois, preciso usa-ló agora
+        fatorial_baixo = 1#parte de baixo x1! * x2! * xn!
+
+        for c in range(len(repete)):
+            #quando acabar, inves de erro ele quebra o laço
+            try:
+                letra = repete[0]
+            except:
+                break
+            fatorial_baixo *= fatorial(repete.count(letra) + 1)#multiplica direto os de baixo
+            while letra in repete:#tira os repetidos já usados
+                repete.remove(letra)
+        #calculo do anagrama, int() só pra ficar bonito
+        resultado = int(fatorial_cima / fatorial_baixo)
+
+
+    return  resultado
+
+</code>
+<p id="pgAnagrmas">Para ver o programa em JavaScript,<a href="arquivos/Anagramas/index.html" id="pa">clique aqui</a></p>
+
+</pre>
+
+
+</div>
+
+
+
+
+</body>
+</html>

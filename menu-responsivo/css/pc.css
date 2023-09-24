@@ -1,0 +1,13 @@
+#burger {
+    display: none;
+}
+
+menu {
+    display: inline;
+}
+
+menu li {
+    display: inline-block;
+    margin: 0 0;
+    margin: none;
+}

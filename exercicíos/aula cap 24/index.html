@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Formulário</title>
+    <style>
+        form {
+            margin: auto;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+
+    <form action="" onsubmit="enviar()"  method="get" autocomplete="off">
+        <label for="nome">Nome: </label> <br>
+        <input type="text" name="name" id="nome" oninput="mostrarNome()">  <br> 
+
+        <input type="submit" value="Enviar" onclick="enviar()"> <br>   
+        <output name="out" id="out">texto<output> 
+    </form>
+
+    <button id="btn" onclick="teste()">redirecionar</button>
+
+    <script src="./teste.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+var palavra = 'Nhe'
+palavra = palavra.toLowerCase()//todas as letras iguais (tamanho)
+palavraArray = palavra.split('')// '' faz um array quebrando a cada palavra
+
+
+function verificarRepetidas(array) {
+    naoRepete = []
+    repetidas = []
+    //nenhuma repetdida
+    for(let c = 0; array; c++) {
+        let letra = array[c]
+        // vê cada letra de não repete
+        for(let c2 = 0; naoRepete; c2++) {
+            if (letra != naoRepete[c]) {
+                naoRepete.concat(letra)
+            } else {
+                repetidas.concat(letra)
+            }
+        }
+    return {naoRepete:naoRepete, repetidas:repetidas}
+    }
+    
+
+}
+
+console.log(verificarRepetidas(palavra))
+

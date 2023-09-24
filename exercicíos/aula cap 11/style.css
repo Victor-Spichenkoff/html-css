@@ -1,0 +1,24 @@
+div{
+    text-align: center;
+
+}
+body{
+    background-color: rgb(82, 80, 80);
+    color: white;
+}
+
+h1{
+    color: red;
+    font-size: 70px;
+}
+
+h2{
+    font-size: 45px;
+    color: rgb(255, 119, 119);
+}
+
+
+p{
+    font-size:x-large;
+}
+

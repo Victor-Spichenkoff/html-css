@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Media Queries</title>
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="novoTamanho()">
+    <header>
+        <h1>Desafio</h1>
+        <span class="material-symbols-outlined" id="burger" onclick="menuToggle()">
+            menu
+        </span>
+        <menu id="todoMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Páginas</a></li>
+                <li><a href="#">Extra</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Exemplo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed nisi veniam similique ullam incidunt, fugiat quasi facere. Laborum cupiditate voluptas, et ipsam nihil consequatur aliquam tempore, similique iste provident nesciunt, nisi fugit laudantium! Sint, animi aspernatur! Excepturi, minus minima? Animi, voluptatum iure mollitia quas velit itaque et repellat doloremque, perferendis natus eaque. Dicta nesciunt totam, autem culpa, id perferendis delectus cupiditate fugiat aliquam nobis neque repellendus nihil fuga exercitationem ipsam pariatur cum itaque praesentium. Inventore nemo facilis necessitatibus distinctio culpa. Explicabo officia voluptatum earum error, consectetur expedita cum obcaecati eligendi sint molestias, totam natus, nisi enim asperiores ipsam veniam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda reprehenderit possimus beatae dolor eum facilis aspernatur ea, quam dolores nobis minus nostrum voluptates ipsa non tempore harum labore recusandae incidunt quo amet enim necessitatibus fugiat. Vero inventore, laboriosam officiis officia recusandae maiores nisi assumenda. Dolorem molestiae odio nam, nulla suscipit velit soluta architecto dolore nostrum ipsa. Dicta, aperiam quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam obcaecati optio, animi praesentium nihil id quia illo nostrum aperiam, ipsam modi harum aliquam dicta iusto voluptates accusamus numquam laborum dolore velit. Alias incidunt laboriosam pariatur nobis odio! Earum, quibusdam asperiores.</p>
+        </article>
+    </main>
+
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

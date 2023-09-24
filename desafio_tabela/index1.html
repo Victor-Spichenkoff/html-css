@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Span em Tabela</title>
+    <style>
+        body {
+            background-image: linear-gradient(135deg, rgb(158, 222, 247), rgb(49, 181, 233));
+            height: 98vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            width: 50vw;
+            border: yellow;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        td {
+            border: 1px black solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 13.1</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td spanrow="2">7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td spanrow="2">12</td>
+        </tr>
+        <tr>
+            <td >13</td>
+            <td >14</td>
+            <td >15</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(43, 43, 43);
+    color: rgb(238, 238, 238);
+    text-align: center;
+}
+
+div{
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    font-style: oblique;
+    font-size: 50px;
+}
+

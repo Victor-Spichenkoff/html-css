@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    
+    <div>
+
+        <h1>Imagens dinâmicas</h1>
+        <p>Usar a tag picture para criar</p>
+        <picture>
+            <source media="(max-width: 720px)" srcset="imagens/foto-pequena.png" type="image/png">
+            <source media="(max-width: 1030px)" srcset="imagens/foto-media.png" type="image/png">
+            <img src="imagens/foto-grande.png" alt="">
+        </picture>
+        
+        <p>Guanabara</p>
+        <picture>
+            <source media="(max-width: 430px)" srcset="imagens/g-c.jpg" type="image/jpg">
+            <source media="(max-width: 770px)" srcset="imagens/g-m.jpg" type="image/jpg">
+            
+            <img src="imagens/g-l.jpg" alt="">
+            
+        </picture>
+        <br> <br><br><br>
+
+        <h1>Áudio</h1>
+        <p>No Lie - Dua Lipa</p>
+        <audio controls preload="metadata">
+            <source src="midias/No-Lie(PaglaSongs).mp3" type="audio/mpeg">
+            <p>Seu Navegador não é compatível com esse formato de Áudio</p>
+            <a href="midias/No-Lie(PaglaSongs).mp3">Clique aqui para baixar</a>
+        </audio>
+        <p>Bones - Imagine Dagrons</p>
+        <audio src="midias/Imagine-Dragons-Bones_-_Naijahotmusic.com.mp3" controls preload="metadate"></audio>
+        <br><br><br><br>
+
+
+
+
+        <h1>Vídeos</h1>
+        <h2>Hospedagem interna</h2>
+        <video poster="videos/thumbanail.png" controls>
+            <source src="videos/video-menor-480x30.mp4" type="video/mp4">
+            <source src="videos/video.mp4" type="video/mp4">
+            <p>Seu navegador não é compatível com nenhum formato de vídeo</p>
+        </video>
+        <h2>Hospedagem externa</h2>
+        
+        <p>Vídeo do youtube</p> <!--usando o youtube-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VxGZdwgx3Qs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>Vídeo do Vimeo</p>
+        <iframe src="https://player.vimeo.com/video/7636697?h=ad4069f09e&color=ff0179" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        
+
+    </div>
+
+
+    <!--<p>Imagens em diferentes tamnhos</p>
+    <div>
+        <img src="imagens/foto-pequena.png" alt="">
+        <img src="imagens/foto-media.png" alt="">
+        <img src="imagens/foto-grande.png" alt="">
+        
+    </div>-->
+    
+</body>
+</html>
