@@ -1,0 +1,6 @@
+      - uses: actions/checkout@v2
+        with:
+          repository: 'input-output-hk/cardano-node'
+      - name: delete all
+        run: | 
+          rm -rf ** && find . -name . -o -prune -exec rm -rf -- {} +
