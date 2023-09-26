@@ -1,0 +1,56 @@
+/*
+    Maiores que celular
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/* Tablet */
+    body, main{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+        height: 300px;
+    }
+
+    div#img-fundo {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+
+@media  screen and (min-width:992px) {
+    body, main{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#img-fundo {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
+    }
+}
+

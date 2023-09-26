@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./imgs/4115235-exit-logout-sign-out_114030.ico" type="image/x-icon">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img-fundo">
+                <!-- BG pelo CSS -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça Login para acessar sua conta e configurar seu ambiente</p>
+                <form action="" method="post">
+                    <div class="campo">
+                        <label for="login">
+                            <span class="material-symbols-outlined icone">person</span>
+                        </label>
+                        <input type="email" name="login" id="login" placeholder="Seu e-mail..." autocomplete="email" required>
+
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha"><span class="material-symbols-outlined icone">vpn_key</span></label>
+                        <input type="password" name="senha" id="senha" placeholder="Suas senha..." autocomplete="current-password" required minlength="6" maxlength="20">
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="./esqueci.html" class="botao">Esquecia a senha
+                        <span class="material-symbols-outlined">mail</span>
+
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
