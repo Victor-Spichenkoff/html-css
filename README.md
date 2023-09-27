@@ -27,4 +27,4 @@
     <li>Diversos Projetos</li>
 </ul>
 
-<a href="https://victor-spichenkoff.github.io/html-css/">Visite o Hub com os projetos</a>
+<a href="https://victor-spichenkoff.github.io/html-css/" target="_blank">Visite o Hub com os projetos</a>
