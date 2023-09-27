@@ -1,0 +1,85 @@
+:root{
+    --green1: #125C0A;
+    --green2: #2B5C26;
+    --green3: #21A813;
+    --green4: #6AE15C;
+    --green5: #2ADB17;
+}
+
+@font-face {
+    font-family: Android;
+    src: url('../fontes/idroid.otf');
+}
+
+
+*{
+    font-family: Courier, monospace, Helvetica, sans-serif;
+}
+
+body  {
+    margin: 0px;
+    background-color: beige;
+    background-color: #c5ebd6;
+}
+
+
+aside {
+    position: relative;
+    margin: 0px;
+    height: 150px;
+    width: 100vw;
+    background-image: linear-gradient(to bottom,  #46ac3b, #1d3b1a);
+}
+
+header {
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+}
+
+aside  h1 {
+    margin: 0;
+    color: white;
+    margin: 10px 0 0 0;
+    padding: 20px 0 10px 0;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+aside h2 {
+    color: rgba(252, 252, 252, 0.767);
+    font-size: 14px;
+    width: 400px;
+    margin: auto;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+
+header {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+
+nav {
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cce4c9;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+nav a:visited {
+    color: #cce4c9;
+}
+
+nav a:hover {
+    background-color: #1a990c6c;
+}
